@@ -77,13 +77,11 @@ func main() {
 		c.Redirect(302, "https://github.com/uthsobcb/UniDirectory")
 	})
 	router.GET("/health", func(c *gin.Context) {
-		router.GET("/status", func(c *gin.Context) {
-			c.JSON(http.StatusOK, gin.H{
-				"schemaVersion": 1,
-				"label":         "status",
-				"message":       "UP",
-				"color":         "brightgreen",
-			})
+		c.JSON(http.StatusOK, gin.H{
+			"schemaVersion": 1,
+			"label":         "status",
+			"message":       "UP",
+			"color":         "brightgreen",
 		})
 	})
 	port := os.Getenv("PORT")
