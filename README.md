@@ -10,6 +10,8 @@ UniDirectory is a simple and powerful REST API providing an up-to-date list of a
 Recently, I worked on a project that required displaying the names of all universities in Bangladesh. Since there was no available API providing this information, we had to manually list them in a JSON file. While learning Go and exploring web scraping, I thought—why not build an API myself?
 So here we are. A directory of universities of Bangladesh. 
 
+### (No, its not a mistake if root url redirect you here it's working fine. since i hosted this on scale to zero so when its not running its unavailable. If you want this to run 24/7 please self host this. For any help mail me hello@uthsob.me )
+
 ###  Live API Endpoint
 Base URL: https://unidirectory.fly.dev
 
@@ -55,6 +57,9 @@ Get details of a specific university by its unique ID:
 ```
 GET https://unidirectory.fly.dev/universities/5
 ```
+
+### POST `/scrape` 
+Scrape latest University data from Database!
 
 ## 🛠 Built With
 
